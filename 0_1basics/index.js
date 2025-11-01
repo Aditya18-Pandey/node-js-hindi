@@ -1,0 +1,1 @@
+console.log("Hello, Adi! Your JS setup is working!");
