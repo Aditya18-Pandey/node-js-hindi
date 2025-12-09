@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style =" background:rgb(74, 57, 57); color : rgb(216, 231, 244)">
+    <h1>A small peroject...</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let IntervalId;
+    
+    const sayDate = function(str){
+        console.log(str,Date.now());
+    }
+    document.querySelector('#start').addEventListener('click', function(){
+        if(!IntervalId){
+        IntervalId = setInterval(sayDate,2000,"Adi")}
+        });
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(IntervalId)
+        intervalId = null;
+    })
+</script>
+</html>
